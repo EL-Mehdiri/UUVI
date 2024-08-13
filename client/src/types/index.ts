@@ -68,6 +68,11 @@ export type RatingProps = {
   rating: number;
 };
 
+// header props
+export type HeaderProps = {
+  name: string;
+};
+
 // stat card
 export type StatDetail = {
   title: string;
