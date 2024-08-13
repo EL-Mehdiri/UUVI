@@ -8,6 +8,8 @@ import { globalErrorHandler } from "./utils/errorHandling";
 
 // route imports
 import dashboardRoutes from "./routes/dashboardRoutes";
+import productRoutes from "./routes/productRoutes";
+
 // configurations
 dotenv.config();
 const app = express();
@@ -24,6 +26,7 @@ app.use(globalErrorHandler);
 
 // routes
 app.use("/dashboard", dashboardRoutes);
+app.use("/products", productRoutes);
 
 // server
 const port = process.env.PORT || 3001;
