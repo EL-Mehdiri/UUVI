@@ -8,6 +8,7 @@ export interface InitialStateTypes {
 
 // redux api
 export interface Product {
+  [x: string]: any;
   productId: string;
   name: string;
   price: number;
@@ -86,4 +87,18 @@ export type StatCardProps = {
   primaryIcon: JSX.Element;
   details: StatDetail[];
   dateRange: string;
+};
+
+// create product types
+
+export type ProductFormData = {
+  name: string;
+  price: number;
+  stockQuantity: number;
+  rating: number;
+};
+export type CreateProductModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+  onCreate: (formData: ProductFormData) => void;
 };
