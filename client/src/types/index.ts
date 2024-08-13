@@ -60,3 +60,8 @@ export interface User {
   name: string;
   email: string;
 }
+
+// rating types
+export type RatingProps = {
+  rating: number;
+};
