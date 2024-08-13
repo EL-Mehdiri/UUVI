@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import prisma from "../../config";
 
-export const getDashboardMatrics = async (
+export const getDashboardMetrics = async (
   req: Request,
   res: Response,
   next: NextFunction

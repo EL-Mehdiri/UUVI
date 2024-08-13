@@ -12,9 +12,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getDashboardMatrics = void 0;
+exports.getDashboardMetrics = void 0;
 const config_1 = __importDefault(require("../../config"));
-const getDashboardMatrics = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+const getDashboardMetrics = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const popularProducts = yield config_1.default.products.findMany({
             take: 15,
@@ -59,4 +59,4 @@ const getDashboardMatrics = (req, res, next) => __awaiter(void 0, void 0, void 0
         next(error);
     }
 });
-exports.getDashboardMatrics = getDashboardMatrics;
+exports.getDashboardMetrics = getDashboardMetrics;

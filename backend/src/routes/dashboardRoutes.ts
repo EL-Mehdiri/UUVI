@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { getDashboardMatrics } from "../controllers/dashboardController";
+import { getDashboardMetrics } from "../controllers/dashboardController";
 const router = Router();
 
-router.get("/", getDashboardMatrics);
+router.get("/", getDashboardMetrics);
 
 export default router;
