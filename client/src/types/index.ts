@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react";
+
 // redux state
 export interface InitialStateTypes {
   isSidebarCollapsed: boolean;
@@ -64,4 +66,19 @@ export interface User {
 // rating types
 export type RatingProps = {
   rating: number;
+};
+
+// stat card
+export type StatDetail = {
+  title: string;
+  amount: string;
+  changePercentage: number;
+  IconComponent: LucideIcon;
+};
+
+export type StatCardProps = {
+  title: string;
+  primaryIcon: JSX.Element;
+  details: StatDetail[];
+  dateRange: string;
 };
